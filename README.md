@@ -1,6 +1,9 @@
 # Liquid Penetrant Test (LPT, DP, LPI, PT)
 Detection of liquid penetrant test with AI (Yolo11)
 
+### MODEL
+- Yolo11l: https://huggingface.co/jparedesDS/liquid-penetrant-test-detection
+
 #### Supported Labels
 ['defecto']
 
