@@ -1,4 +1,4 @@
-# Liquid Penetrant Test (DP, LPI, PT)
+# Liquid Penetrant Test (LPT, DP, LPI, PT)
 Detection of liquid penetrant test with AI (Yolo11)
 
 #### Supported Labels
@@ -17,7 +17,7 @@ Detection of liquid penetrant test with AI (Yolo11)
 from ultralytics import YOLO
 
 # Load a pretrained YOLO model
-model = YOLO(r'weights\liquid-penetrant-test-detection-yolo11l.pt')
+model = YOLO(r'weights\yolo11l_LPI.pt')
 
 # Run inference on 'image.png' with arguments
 model.predict(
@@ -27,20 +27,18 @@ model.predict(
     )
 ```
 #### Confusion matrix normalized
-![confusion_matrix_normalized.png](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/tE3CoiaB8ODKdQs_gTWTp.png)
+![confusion_matrix_normalized.png](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/cW-e-XzOwhyTbaNdCHEJc.png)
 #### Labels
-![labels.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/okW-nqDnryqccYbsDt-ra.jpeg)
+![labels.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/eVEQyEO6ddZVgPW9RdzOu.jpeg)
 #### Results
-![results.png](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/k7lUu5uaNXISLyGfLkOdX.png)
+![results.png](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/xgQm7K5mSHq9cDwDLW8Hz.png)
 #### Predict
-![val_batch2_labels.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/_ku6Baq6CrSkE7ap4zQbn.jpeg)
-![val_batch1_labels.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/EK7SfvdOdUAY8d20IXzqI.jpeg)
+![val_batch1_labels.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/7n8JsgcalT6nAMgpAdB4V.jpeg)
+![val_batch2_labels.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/81CEGAahhFqSZ7PaW-ai3.jpeg)
 ```
-YOLO11m summary (fused): 303 layers, 20,031,574 parameters, 0 gradients, 67.7 GFLOPs
-                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 11/11 [00:06<00:00,  1.71it/s]
-                   all        999       2016      0.963      0.898      0.931      0.655
-                  Body        966       1029      0.971      0.935      0.958      0.791
-                  Head        936        987      0.955      0.862      0.904      0.519
+YOLO11l summary (fused): 464 layers, 25,280,083 parameters, 0 gradients, 86.6 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 12/12 [00:05<00:00,  2.32it/s]
+                   all        836        752      0.794      0.771      0.793      0.379
 ```
 
 #### Others models...
