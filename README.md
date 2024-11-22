@@ -1,4 +1,4 @@
-# Liquid Penetrant Test (LPT, DP, LPI, PT)
+# Fluorescent penetrant inspection (FPI, DP, LPI, PT)
 Detection of liquid penetrant test with AI (Yolo11)
 
 ### MODEL
